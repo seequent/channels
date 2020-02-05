@@ -5,7 +5,7 @@ If you have questions about Channels, need debugging help or technical support, 
 
 - `Stack Overflow <https://www.stackoverflow.com>`_
 - The `Django Users mailing list <https://groups.google.com/forum/#!forum/django-users>`_ (django-users@googlegroups.com)
-- The Channels support channel on the `PySlackers Slack group <https://pyslackers.com/>`_
+- The #django channel on the `PySlackers Slack group <https://pyslackers.com/>`_
 
 If you have a concrete bug or feature request (one that is clear and actionable), please file an issue against the
 appropriate GitHub project.
@@ -22,7 +22,7 @@ Apologies if this comes off as harsh, but please understand that open source mai
 of time, and if we answered all the issues and support requests there would be no time left to actually work on the code
 itself!
 
-Making bugs reproducable
+Making bugs reproducible
 ------------------------
 
 If you're struggling with an issue that only happens in a production environment and can't get it to reproduce locally
@@ -32,7 +32,7 @@ environments.
 First off, try changing your production environment to see if that helps - for example, if you have Nginx/Apache/etc.
 between browsers and Channels, try going direct to the Python server and see if that fixes things. Turn SSL off if you
 have it on. Try from different browsers and internet connections. WebSockets are notoriously hard to debug already,
-and so you should expect some level of akwardness from any project involving them.
+and so you should expect some level of awkwardness from any project involving them.
 
 Next, check package versions between your local and remote environments. You'd be surprised how easy it is to forget
 to upgrade something!
@@ -65,7 +65,7 @@ General support request
     Sorry, but we can't help out with general support requests here - the issue tracker is for reproduceable bugs and
     concrete feature requests only! Please see our support documentation (http://channels.readthedocs.io/en/latest/support.html)
     for more information about where you can get general help.
-    
+
 Non-specific bug/"It doesn't work!"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -75,11 +75,11 @@ Non-specific bug/"It doesn't work!"
     environment, as they may not be problems in the project itself. Our support documentation
     (http://channels.readthedocs.io/en/latest/support.html) has details about how to take this sort of problem, diagnose it,
     and either fix it yourself, get help from the community, or make it into an actionable issue that we can handle.
-    
+
     Sorry we have to direct you away like this, but we get a lot of support requests every week. If you can reduce the problem
     to a clear set of steps to reproduce or an example project that fails in a fresh environment, please re-open the ticket
     with that information.
-    
+
 Problem in application code
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

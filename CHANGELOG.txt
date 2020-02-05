@@ -1,6 +1,31 @@
 Full release notes, with more details and upgrade information, are available at:
 https://channels.readthedocs.io/en/latest/releases
 
+2.4.0 (2019-12-18)
+------------------
+
+* Wraps session save calls in ``database_sync_to_async()``, for compatibility
+  with Django 3.0's ``async_unsafe()`` checks.
+
+* Drops compatibility with all Django versions lower than 2.2.
+
+2.3.1 (2019-10-23)
+------------------
+
+* Adds compatibility with Python 3.8.
+
+
+2.3.0 (2019-09-18)
+------------------
+
+* Adjusted ``AsgiHandler`` HTTP body handling to use a spooled temporary file,
+  rather than reading the whole request body into memory.
+
+  As a result, ``AsgiRequest.__init__()`` is adjusted to expect a file-like
+  ``stream``, rather than the whole ``body`` as bytes. Test cases instantiating
+  requests directly will likely need to be updated to wrap the provided body
+  in, e.g., `io.BytesIO`.
+
 2.2.0 (2019-04-14)
 ------------------
 
@@ -38,7 +63,7 @@ https://channels.readthedocs.io/en/latest/releases
 ------------------
 
 * Django middleware is now cached rather than instantiated per request
-  resulting in a sigificant speed improvement
+  resulting in a significant speed improvement
 
 * ChannelServerLiveTestCase now serves static files again
 
@@ -168,7 +193,7 @@ https://channels.readthedocs.io/en/latest/releases
 * ``enforce_ordering`` now works correctly with the new-style process-specific
   channels
 
-* ASGI channel layer versions are now explicitly checked for version compatability
+* ASGI channel layer versions are now explicitly checked for version compatibility
 
 
 1.1.2 (2017-04-01)

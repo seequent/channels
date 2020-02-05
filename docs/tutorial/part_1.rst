@@ -9,7 +9,7 @@ In this tutorial we will build a simple chat server. It will have two pages:
 The room view will use a WebSocket to communicate with the Django server and
 listen for any messages that are posted.
 
-We assume that you are familar with basic concepts for building a Django site.
+We assume that you are familiar with basic concepts for building a Django site.
 If not we recommend you complete `the Django tutorial`_ first and then come back 
 to this tutorial.
 
@@ -42,8 +42,8 @@ run natively.
     tutorial will need Redis to run, and we recommend Docker as the easiest
     way to do this.
 
-.. _the Django tutorial: https://docs.djangoproject.com/en/2.0/intro/tutorial01/
-.. _Django installed: https://docs.djangoproject.com/en/2.0/intro/install/
+.. _the Django tutorial: https://docs.djangoproject.com/en/stable/intro/tutorial01/
+.. _Django installed: https://docs.djangoproject.com/en/stable/intro/install/
 
 .. _Install Docker: https://www.docker.com/get-docker
 
